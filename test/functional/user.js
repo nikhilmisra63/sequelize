@@ -1,7 +1,6 @@
 const expect = require("chai").expect;
 const request = require("supertest");
 const app = require("../../routes/routes");
-const PORT = process.env.PORT || 3000;
 
 const data = {
   name: "Nikhil",
@@ -38,9 +37,6 @@ it("Should be able to add records", async () => {
     .send(data)
     .set("Accept", "application / json")
     .expect(200);
-  // .then(response => {
-  //   expect(response.body).to.be.a("object");
-  // });
 });
 
 // update records

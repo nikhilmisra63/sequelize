@@ -7,3 +7,4 @@ db.sequelize.sync().then(() => {
     console.log("connected...");
   });
 });
+require("./routes/routes");
